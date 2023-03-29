@@ -1,0 +1,801 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Yanone+Kaffeesatz:wght@300;500;600&display=swap');
+:root {
+  --myRed: #D60000;
+  --myBlack: #292827;
+  --myBeige: #F5EFE5;
+  --myWhite: #FFF6F6;
+  --imageShadow: 5px 5px 4px rgba(0, 0, 0, 0.35);
+  --textShadow: 2px 5px 4px rgba(27, 27, 27, 0.25);
+}
+
+body, html {
+  background-color: var(--myBeige);
+  scroll-behavior: smooth !important;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Poppins', sans-serif, sans-serif;
+  color: var(--myBlack);
+}
+
+/* NAVBAR*/
+header {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  font-family: 'Yanone Kaffeesatz', sans-serif, sans-serif;
+  font-size: 60px;
+  color: var(--myWhite);
+}
+
+.logo img {
+  width: 55px;
+  height: 50px;
+  margin-bottom: 9px;
+}
+
+.logo h1 span {
+  font-family: 'Yanone Kaffeesatz', sans-serif, sans-serif;
+  color: var(--myRed);
+}
+
+nav {
+  width: 50%;
+}
+
+.container-navbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-navbar a {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 22px;
+  color: var(--myWhite);
+}
+
+.container-navbar a:hover{
+  color: var(--myRed);
+  text-shadow: 2px 4px 5px rgba(119, 117, 117, 0.45);
+}
+
+/*BOTAO FALE CONOSCO*/
+#botao-fale-conosco {
+  z-index: 2;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 247.32px;
+  height: 80px;
+  background-color: var(--myRed);
+  border-radius: 20px;
+  animation: shake-animation 4.72s ease infinite;
+  transform-origin: 50% 50%;
+  box-shadow: var(--imageShadow);
+}
+
+#botao-fale-conosco span {
+  margin: auto;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--myWhite);
+}
+
+#botao-fale-conosco:hover {
+  box-shadow: 2px 5px 4px rgba(27, 27, 27, 0.25);
+  background-color: #e63333;
+}
+
+@keyframes shake-animation {
+  0% {
+    transform: translate(0, 0)
+  }
+
+  1.78571% {
+    transform: translate(5px, 0)
+  }
+
+  3.57143% {
+    transform: translate(0, 0)
+  }
+
+  5.35714% {
+    transform: translate(5px, 0)
+  }
+
+  7.14286% {
+    transform: translate(0, 0)
+  }
+
+  8.92857% {
+    transform: translate(5px, 0)
+  }
+
+  10.71429% {
+    transform: translate(0, 0)
+  }
+
+  100% {
+    transform: translate(0, 0)
+  }
+}
+
+/* HOME */
+.background-home {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/assets/top-view-meat-with-garlic-herbs.png');
+  background-size: 100%;
+  filter: drop-shadow(0px 4px 4px rgba(41, 40, 39, 0.3));
+  position: relative;
+}
+
+#home h2 {
+  display: none;
+  width: 500px;
+  font-size: 60px;
+  font-family: 'Poppins', sans-serif, sans-serif;
+  color: var(--myWhite);
+  text-shadow: 2px 5px 4px rgba(255, 255, 255, 0.25);
+  position: absolute;
+  text-align: right;
+  bottom: 150px;
+  right: 50px;
+}
+
+/* SOBRE NÓS */
+#sobre-nos {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.etiqueta {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  width: 410px;
+  height: 90px;
+  background: var(--myWhite);
+  box-shadow: var(--imageShadow);
+  border-radius: 0px 10px 22px 0px;
+}
+
+.etiqueta h2 {
+  color: var(--myRed);
+  text-shadow: var(--textShadow);
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  letter-spacing: 3px;
+  margin: 0 auto;
+
+}
+
+#sobre-nos-content {
+  padding: 80px;
+  display: flex;
+  align-items: center;
+
+}
+
+#sobre-nos-content img {
+  width: 600px;
+}
+
+#sobre-nos-content :nth-child(2) {
+  position: absolute;
+  bottom: 0px;
+  left: 350px;
+  width: 550px;
+}
+
+#sobre-nos-content :nth-child(3) {
+  position: absolute;
+  top: 120px;
+  right: 700px;
+}
+
+#sobre-nos-content p {
+  width: 600px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  border: var(--myBlack) 1px solid;
+  padding: 15px;
+}
+
+#sobre-nos-content :nth-child(4) {
+  position: absolute;
+  right: 80px;
+  top: 180px;
+}
+
+#sobre-nos-content :nth-child(5) {
+  position: absolute;
+  padding: 15px;
+  left: 50%;
+  bottom: 85px;
+}
+
+/*PRODUTOS*/
+#produtos {
+  width: 100vw;
+}
+
+.produtos-content {
+  position: relative;
+  padding: 15px 80px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.produtos-content img {
+  width: 650px;
+  filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.40));
+}
+
+.produtos-content span img {
+  width: 65px;
+  height: 60px;
+}
+
+.produtos-content span {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+  color: var(--myBlack);
+  border-bottom: 2px solid var(--myBlack);
+  margin: 15px 0;
+}
+
+.produtos-content div{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dropdowns*/
+.produtos-content .dropdown-embutidos {
+  position: relative;
+}
+
+.dropdown-content-embutidos ul li{
+  transition: opacity 0.5s ease-in;
+  opacity: 0;
+}
+
+.dropdown-embutidos:hover .dropdown-content-embutidos ul li{
+  opacity: 1;
+}
+
+.produtos-content .dropdown-content-embutidos{
+  max-height: 0;
+  transition: max-height 0.3s ease-in;
+  opacity: 0;
+  text-align: center;
+  font-size: 22px;
+  position: absolute;
+  top: 100px;
+  background-color: var(--myWhite);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-embutidos:hover .dropdown-content-embutidos {
+  max-height: 350px;
+   opacity: 1;
+}
+
+.produtos-content .dropdown-aves {
+  position: relative;
+}
+
+.produtos-content .dropdown-content-aves {
+  max-height: 0;
+  transition: max-height 0.3s ease-in;
+  opacity: 0;
+  width: 500px;
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  font-size: 22px;
+  background-color: var(--myWhite);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-aves:hover .dropdown-content-aves {
+  max-height: 370px;
+   opacity: 1;
+}
+
+.dropdown-content-aves li {
+  transition: opacity 0.5s ease-in;
+  opacity: 0;
+}
+
+.dropdown-aves:hover .dropdown-content-aves li{
+  opacity: 1;
+}
+
+.dropdown-content-aves div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+
+.produtos-content .dropdown-bovino {
+  position: relative;
+}
+
+.produtos-content .dropdown-content-bovino {
+  max-height: 0;
+  transition: max-height 0.3s ease-in;
+  opacity: 0;
+  width: 300px;
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  font-size: 22px;
+  background-color: var(--myWhite);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-bovino:hover .dropdown-content-bovino {
+  max-height: 350px;
+  opacity: 1;
+}
+
+.dropdown-bovino:hover .dropdown-content-bovino ul li{
+  opacity: 1;
+}
+
+.dropdown-content-bovino ul li{
+  transition: opacity 0.5s ease-in;
+  opacity: 0;
+}
+
+
+.dropdown-content-bovino div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+
+.produtos-content .dropdown-suino {
+  position: relative;
+}
+
+.produtos-content .dropdown-content-suino {
+  max-height: 0;
+  transition: max-height 0.3s ease-in;
+  opacity: 0;
+  width: 300px;
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  font-size: 22px;
+  background-color: var(--myWhite);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-suino:hover .dropdown-content-suino {
+  max-height: 350px;
+  opacity: 1;
+}
+
+.dropdown-suino:hover .dropdown-content-suino ul li{
+  opacity: 1;
+}
+
+.dropdown-content-suino ul li{
+  transition: opacity 0.5s ease-in;
+  opacity: 0;
+}
+
+.produtos-content .dropdown-peixe {
+  position: relative;
+}
+
+.produtos-content .dropdown-content-peixe {
+  max-height: 0px;
+  width: 320px;
+  transition: max-height 0.3s ease-in;
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  font-size: 22px;
+  background-color: var(--myWhite);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-peixe:hover .dropdown-content-peixe {
+  max-height: 400px;
+  opacity: 1;
+}
+
+.dropdown-peixe:hover .dropdown-content-peixe ul li{
+  opacity: 1;
+}
+
+.dropdown-content-peixe ul li{
+  transition: opacity 0.5s ease-in;
+  opacity: 0;
+}
+
+.container-peixe div{
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+
+.produtos-content .dropdown-temperos {
+  position: relative;
+}
+
+.produtos-content .dropdown-content-temperos{
+  max-height: 0;
+  transition: max-height 0.3s ease-in;
+  opacity: 0;
+  width: 300px;
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  font-size: 22px;
+  background-color: var(--myWhite);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-temperos:hover .dropdown-content-temperos{
+  max-height: 350px;
+  opacity: 1;
+}
+
+.dropdown-temperos:hover .dropdown-content-temperos ul li{
+  opacity: 1;
+}
+
+.dropdown-content-temperos ul li{
+  transition: opacity 0.5s ease-in;
+  opacity: 0;
+}
+.linha .dropdown-exotico {
+  position: relative;
+}
+
+.linha .dropdown-content-exotico {
+  width: 360px;
+  position: absolute;
+  top: 65px;
+  margin-left: 65px;
+  text-align: center;
+  font-size: 22px;
+  display: none;
+  background-color: var(--myWhite);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.linha:hover .dropdown-content-exotico {
+  display: block;
+}
+
+#background-exoticas {
+  position: relative;
+  width: 100vw;
+  height: 110vh;
+  background-image: url(/assets/backgroundExotico.gif);
+  background-size: 100%;
+  border-bottom: 10px solid #CD0202;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.blur {
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.blur p {
+  margin-left: 70px;
+}
+
+#background-exoticas h3 {
+  color: var(--myWhite);
+  text-shadow: 0px 4px 4px #5c5b5b, 0 0 0 #4e4d4d, 0px 4px 4px #504f4f;
+  font-size: 60PX;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#titulo1 {
+  padding: 15px;
+  margin-left: 70px;
+}
+
+#titulo2 {
+  margin-left: 200px;
+}
+
+#background-exoticas p {
+  color: var(--myWhite);
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 15px;
+}
+
+.linha {
+  margin-left: 0;
+  width: 30%;
+  border-bottom: 2px solid var(--myWhite);
+}
+
+#miniblur {
+  padding: 0;
+  position: absolute;
+  bottom: 25px;
+  left: 5px;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#miniblur p {
+  padding: 0;
+  font-size: 14px;
+}
+
+/*LOCALIZAÇÃO E CONTATO*/
+
+#contato {
+  position: relative;
+  padding: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.contato-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 985px;
+}
+
+.titulo-contato {
+  width: 985px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.contato-content h2 {
+  margin: 5px;
+  align-self: flex-start;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 63px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-shadow: var(--textShadow);
+  color: var(--myRed);
+}
+
+.titulo-contato span {
+  margin: 5px;
+  align-self: flex-start;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #292827;
+}
+
+.contato-content iframe {
+  box-shadow: var(--imageShadow);
+  width: 985px;
+  height: 485px;
+  border: none;
+}
+
+.contato-content .card-contato {
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: -150px;
+  right: 400px;
+  width: 350px;
+  height: 300px;
+  background: var(--myBlack);
+  box-shadow: var(--imageShadow);
+  border-radius: 15px;
+}
+
+.card-contato h3 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: var(--myWhite);
+}
+
+.card-contato span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  line-height: 50px;
+  letter-spacing: 2px;
+  color: var(--myWhite);
+}
+
+.card-contato .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-content img {
+  width: 45px;
+  margin-right: 10px;
+
+}
+
+.card-content div {
+  font-weight: 200;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.card-contato .info {
+  font-size: 18px;
+  margin-left: 15%;
+}
+
+.horarios h3 {
+  text-shadow: var(--textShadow);
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+  color: var(--myBlack);
+}
+
+.horarios p {
+  font-weight: 600;
+  font-weight: 400;
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 1px;
+
+}
+
+.contato-content .horarios{
+  position: absolute;
+  left: 540px;
+  bottom: -140px;
+
+}
+
+/*FOOTER*/
+footer{
+  position: relative;
+  box-shadow: 0px 9px 4px #535252, 0px -9px 4px #3636362a;
+  margin-top: 200px;
+  background-color: rgba(19, 19, 19, 1);
+  width: 100%;
+  height: 500px;
+}
+
+.footer-sociais, .footer-menu, .footer-logo{
+  width: 335px;
+}
+
+footer span, a{
+  color: var(--myWhite);
+}
+
+.footer-container{
+  align-items: center;
+  padding: 70px;
+  padding-top: 150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer .copyright{
+  width: 100%;
+  text-align: center;
+  line-height:60px ;
+  position: absolute;
+  bottom: 0;
+}
+
+footer ul{
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer ul li :hover{
+  color: var(--myRed);
+  font-size: 26px;
+}
+
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>AmoCarnes.com</title>
+  <link rel="icon" type="image/x-icon" href="/assets/icone.ico">
+  <link href="styleform.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="fale-conosco">
+  <header>
+    <a class="logo" href="index.html#home" title="AmoCarnes.com">
+      <img src="assets/meat-heart.svg" alt="Logo" title="Logo">
+      <h1><span>Amo</span>Carnes.com</h1>
+    </a>
+    <nav>
+      <ul class="container-navbar">
+        <li><a href="index.html#home" title="Home">Home</a></li>
+        <li><a href="index.html#sobre-nos" title="Sobre Nós">Sobre Nós</a></li>
+        <li><a href="index.html#produtos" title="Produtos">Produtos</a></li>
+        <li><a href="index.html#contato" title="Contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="fale-conosco">
+    <div class="etiqueta">
+      <h2>Fale Conosco</h2>
+    </div>
+    <div class="form">
+      <div id="msgEnvio">
+        <h2>Enviado com sucesso!</h2>
+        <img src="/assets/form-enviado.gif" alt="Checked">
+      </div>
+      <div class="inputs">
+      <span>* Campos obrigatórios.</span>
+        <input id="nome" type="text" placeholder="* Nome: ">
+        <input id="email" type="text" placeholder="* E-mail:">
+        <input id="telefone" type="tel" placeholder="* Telefone: ">
+      </div>
+      <h3>* Preferência:</h3>
+      <div id="radio-button">
+        <div class="radioButton marked">
+          <div></div>
+        </div>
+        <span>Ambas</span>
+        <div class="radioButton">
+          <div class="hidden"></div>
+        </div>
+        <span>Carnes Tradicionais</span>
+        <div class="radioButton">
+          <div class="hidden"></div>
+        </div><span>Carnes Exóticas</span>
+      </div>
+      <h3>* Tipo de carne favorita:</h3>
+      <div onclick=showOptions() id='select'>
+        <span>Bovina</span>
+        <img src="/assets/svg/arrow.svg" title="Abrir opções">
+      </div>
+      <div class="hidden options">
+        <ul>
+          <li onclick=selected(this)>Bovina</li>
+          <li onclick=selected(this)>Suína</li>
+          <li onclick=selected(this)>Aves</li>
+          <li onclick=selected(this)>Frutos do Mar</li>
+          <li onclick=selected(this)>Outras</li>
+        </ul>
+      </div>
+      <h3>Receber comunicações por:</h3>
+      <div id="checkBox">
+        <div class=" flex-column-boxes">
+          <div id="caixaPai" onclick="checkPai()" class="box"></div>
+          <div onclick="check(this)" class="box"></div>
+          <div onclick="check(this)" class="box"></div>
+        </div>
+        <div class="flex-column-textos">
+          <span>Todos os meios</span>
+          <span>E-mail</span>
+          <span>SMS</span>
+        </div>
+      </div>
+      <div id="campo-mensagem">
+        <label for="textArea">* Escreva sua mensagem:</label><br>
+        <textarea id="textArea" name="mensagem" rows="10" cols="90"></textarea><br>
+      </div>
+      <button onclick="verificador()" id="submit" title="Submit">Submit</button>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-sociais">
+        <span>REDES SOCIAIS</span>
+        <div>
+          <a href="https://wa.link/fcogqz" target="_blank" title="Whatsapp"><img src="/assets/svg/social-whatsapp.svg"
+              alt="Logo Whatsapp"></a>
+          <a href="https://www.facebook.com/people/Del%C3%ADcias-da-CarneEx%C3%B3ticas/100051408973552/" target="_blank"
+            title="Facebook"><img src="/assets/svg/social-facebook.svg" alt="Logo Facebook"></a>
+          <a href="https://www.instagram.com/deliciadacarne01/" target="_blank" title="Instagram"><img
+              src="/assets/svg/social-instagram.svg" alt="Logo Instagram"></a>
+        </div>
+      </div>
+      <div class="footer-menu">
+        <ul>
+          <li><a href="index.html#home" title="Home">Home</a></li>
+          <li><a href="index.html#sobre-nos" title="Sobre Nós">Sobre Nós</a></li>
+          <li><a href="index.html#produtos" title="Produtos">Produtos</a></li>
+          <li><a href="index.html#contato" title="Contato">Contato</a></li>
+          <li><a href="form.html" title="Fale Conosco">Fale Conosco</a></li>
+        </ul>
+      </div>
+      <div class="footer-logo">
+        <a class="logo" href="index.html#home" title="AmoCarnes.com">
+          <img src="assets/meat-heart.svg" alt="Logo" title="Logo">
+          <h1><span>Amo</span>Carnes.com</h1>
+        </a>
+      </div>
+    </div>
+    <div class="copyright">
+      <span> © Todos os direitos reservados 2022 - 2023 </span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>

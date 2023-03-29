@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Yanone+Kaffeesatz:wght@300;500;600&display=swap');
+
+:root {
+    --myRed: #D60000;
+    --myBlack: #292827;
+    --myBeige: #F5EFE5;
+    --myWhite: #FFF6F6;
+    --imageShadow: 5px 5px 4px rgba(0, 0, 0, 0.35);
+    --textShadow: 2px 5px 4px rgba(27, 27, 27, 0.25);
+}
+
+body, html {
+  background-color: var(--myBeige);
+  scroll-behavior: smooth !important;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif, sans-serif;
+    color: var(--myBlack);
+}
+
+/* NAVBAR*/
+header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+}
+
+.logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-family: 'Yanone Kaffeesatz', sans-serif, sans-serif;
+    font-size: 60px;
+    color: var(--myWhite);
+}
+
+.logo img {
+    width: 55px;
+    height: 50px;
+    margin-bottom: 9px;
+}
+
+.logo h1 span {
+    font-family: 'Yanone Kaffeesatz', sans-serif, sans-serif;
+    color: var(--myRed);
+}
+
+nav {
+    width: 50%;
+}
+
+.container-navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-navbar a {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 22px;
+    color: var(--myWhite);
+}
+
+.container-navbar a:hover {
+    color: var(--myRed);
+    text-shadow: 2px 4px 5px rgba(119, 117, 117, 0.45);
+}
+
+/*etiqueta*/
+.etiqueta {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    width: 410px;
+    height: 90px;
+    background: white;
+    box-shadow: var(--imageShadow);
+    border-radius: 0px 10px 22px 0px;
+}
+
+.etiqueta h2 {
+    color: var(--myRed);
+    text-shadow: var(--textShadow);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 500;
+    font-size: 64px;
+    letter-spacing: 3px;
+    margin: 0 auto;
+
+}
+
+/*FOOTER*/
+footer {
+    position: relative;
+    box-shadow: 0px 9px 4px #535252, 0px -9px 4px #3636362a;
+    background-color: rgba(19, 19, 19, 1);
+    width: 100%;
+    height: 500px;
+}
+
+.footer-sociais,
+.footer-menu,
+.footer-logo {
+    width: 335px;
+}
+
+footer span,
+a {
+    color: var(--myWhite);
+}
+
+.footer-container {
+    align-items: center;
+    padding: 70px;
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    position: absolute;
+    bottom: 0;
+}
+
+footer ul {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer ul li :hover {
+    color: var(--myRed);
+    font-size: 26px;
+}
+
+/*FALE CONOSCO*/
+
+#fale-conosco header {
+    position: absolute;
+    top: 0;
+}
+
+#fale-conosco .etiqueta {
+    margin-top: 150px;
+}
+
+/*radio button*/
+#radio-button {
+    display: flex;
+    align-items: center;
+}
+
+#radio-button span {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.radioButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.radioButton div {
+    background-color: #d60000;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.marked {
+    border: 1px solid #d60000;
+    box-shadow: 3px 3px 3px #dd3c3c;
+}
+
+.hidden {
+    display: none;
+}
+
+/*select*/
+.hidden {
+    display: none;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
+#select img {
+    width: 20px;
+    position: absolute;
+    right: 15px;
+}
+
+#select {
+    font-size: 22px;
+    background-color: white;
+    padding: 10px;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.options {
+    background-color: white;
+    padding: 10px;
+    width: 260px;
+    font-size: 22px;
+    position: absolute;
+    bottom: 440px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.options li:hover {
+    color: #d60000;
+    font-size: 24px;
+}
+
+/*checkbox*/
+.box {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #d60000;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+.checked {
+    background-image: url(/assets/checked.png);
+    background-size: 30px;
+}
+
+.middle {
+    background-image: url(/assets/middle.png);
+    background-size: 30px;
+}
+
+#checkBox {
+    display: flex;
+    align-items: center;
+
+}
+
+.flex-column-boxes {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-column-textos {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+/*Form*/
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 70px;
+    padding: 70px;
+}
+
+.inputs input {
+    width: 500px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 7px;
+    box-shadow: var(--textShadow);
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    letter-spacing: 1px;
+}
+
+#textArea {
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    box-shadow: var(--imageShadow)
+}
+
+#campo-mensagem {
+    margin: 25px 0;
+}
+
+.form h3 {
+    font-size: 30px;
+    margin: 20px 0px;
+}
+
+#submit {
+    cursor: pointer;
+    padding: 10px;
+    width: 100px;
+    font-weight: bold;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 26px;
+    border-radius: 5px;
+}
+
+.error{
+  border: 2px solid var(--myRed) !important;
+}
+
+ .shake {
+  animation: shake 0.5s;
+
+  animation-iteration-count: 2;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#msgEnvio{
+  opacity: 0;
+  text-align: center;
+  position: absolute;
+  bottom: 170px;
+  right: 150px;
+  transition: opacity 2s ease-in-out;
+}
+
+#msgEnvio img{
+  width: 200px;
+}
+
+#msgEnvio.aparecendo {
+  opacity: 1;
+}
+
+#msgEnvio.sumindo {
+  opacity: 0;
+}
