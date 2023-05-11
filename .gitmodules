@@ -1,0 +1,3 @@
+[submodule "INFNET"]
+	path = INFNET
+	url = https://github.com/pedrovncs/INFNET
