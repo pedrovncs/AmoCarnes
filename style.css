@@ -544,7 +544,7 @@ nav {
   position: relative;
   width: 100vw;
   height: 110vh;
-  background-image: url(/assets/backgroundExotico.gif);
+  background-image: url(assets/backgroundExotico.gif);
   background-size: 100%;
   border-bottom: 10px solid #CD0202;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
